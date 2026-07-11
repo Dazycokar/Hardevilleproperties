@@ -1,9 +1,12 @@
 import Hero from "./components/Hero";
 import Properties from "./components/Properties";
 import Services from "./components/Services";
-import ContactSection from "./components/ContactSection";
+
 import HomeAboutUs from "./components/HomeAboutUs";
 import OasisShowcase from "./components/OasisShowcase";
+
+import SmartMoveCTA from "./components/SmartMoveCTA";
+import WhyChooseHardeville from "./components/WhyChooseHardeville";
 
 import OwnerQuote from "./components/OwnerQuote";
 import ControllerQuote from "./components/controllerqoute";
@@ -30,9 +33,11 @@ export default function Home() {
         </div>
       </section>
 
+      <SmartMoveCTA />
+      <WhyChooseHardeville />
+
       <HomeAboutUs />
       <ManagingPartner />
-      <ContactSection />
     </div>
   );
 }

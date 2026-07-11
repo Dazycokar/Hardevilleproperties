@@ -10,7 +10,7 @@ export default function Hero() {
           src="/header.png"
           alt="Hardeville hero background"
           fill
-          className="object-cover object-center opacity-70"
+          className="object-contain object-center opacity-70"
           priority
         />
         <div className="absolute inset-0 bg-slate-950/80" />

@@ -33,7 +33,7 @@ export default function OasisShowcase() {
             Oasis estates
           </p>
           <h2 className="mt-3 text-3xl md:text-4xl font-black text-slate-950">
-            A premium lifestyle gliding into view
+            A lifestyle gliding into view of our Oasis Program
           </h2>
           <p className="mt-3 max-w-2xl text-base leading-7 text-slate-600">
             Explore the Oasis collection through a smooth sliding showcase of our
@@ -147,7 +147,7 @@ export default function OasisShowcase() {
                     <p className="text-xs uppercase tracking-[0.25em] text-sky-700">
                       Styling
                     </p>
-                    <p className="mt-2 text-lg font-bold text-slate-950">Premium</p>
+                    <p className="mt-2 text-lg font-bold text-slate-950">Exclusive</p>
                   </div>
                 </div>
 

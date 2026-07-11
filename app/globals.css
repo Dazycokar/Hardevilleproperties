@@ -22,6 +22,15 @@ section {
   scroll-margin-top: 7rem;
 }
 
+/* Extra small phones (e.g., iPhone 6) */
+@media (max-width: 375px) {
+  .max-w-7xl {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+
+
 ::selection {
   background-color: rgba(52, 211, 153, 0.3);
   color: #0f172a;

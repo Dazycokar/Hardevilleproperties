@@ -26,6 +26,12 @@ export default function Footer() {
               <Link href="/contact" className="block transition hover:text-white">
                 Contact
               </Link>
+              <Link href="/about" className="block transition hover:text-white">
+                About Us
+              </Link>
+              <Link href="/blogs" className="block transition hover:text-white">
+                Blogs
+              </Link>
             </div>
           </div>
 
@@ -47,7 +53,7 @@ export default function Footer() {
                 className="flex items-center gap-2 transition hover:text-white"
               >
                 <Icon icon="mdi:map-marker" width="18" height="18" className="text-emerald-400" />
-                Lagos, Nigeria
+                Legacy House, 5, Alhhaji Alli Lane. Ogba Lagos, Nigeria
               </a>
             </div>
           </div>
@@ -72,7 +78,7 @@ export default function Footer() {
               aria-label="Instagram"
               className="transition hover:text-white"
             >
-              <Icon icon="mdi:instagram" width="22" height="22" />
+              {/* <Icon icon="mdi:instagram" width="22" height="22" />
             </Link>
             <Link
               href="https://wa.me/2347086058060"
@@ -80,7 +86,7 @@ export default function Footer() {
               rel="noreferrer"
               aria-label="WhatsApp"
               className="transition hover:text-white"
-            >
+            > */}
               <Icon icon="mdi:whatsapp" width="22" height="22" />
             </Link>
           </div>

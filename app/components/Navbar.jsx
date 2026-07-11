@@ -12,7 +12,8 @@ export default function Navbar() {
     { href: '/properties', label: 'Properties' },
     { href: '/services', label: 'Services' },
     { href: '/about', label: 'About Us' },
-    { href: '/contact', label: 'Contact' },
+    // { href: '/contact', label: 'Contact' },
+    { href: '/blogs', label: 'Blogs' },
   ];
 
   return (
@@ -50,14 +51,14 @@ export default function Navbar() {
             href="/contact"
             className="rounded-full bg-emerald-600 px-5 py-2 text-white shadow-lg transition hover:bg-emerald-700"
           >
-            Get Started
+            Contact Us
           </Link>
         </div>
 
         <button
           type="button"
           onClick={() => setMenuOpen((prev) => !prev)}
-          className="lg:hidden inline-flex items-center justify-center rounded-2xl border border-slate-200 px-3 py-2 text-slate-700 transition hover:bg-slate-100"
+          className="lg:hidden inline-flex items-center justify-center rounded-2xl border border-slate-200 px-3 py-2 text-slate-700 transition hover:bg-slate-100 z-[60]"
           aria-label="Toggle menu"
         >
           <span className="sr-only">Open menu</span>
@@ -77,7 +78,7 @@ export default function Navbar() {
               {item.label}
             </Link>
           ))}
-          <Link href="/contact" className="mt-2 block rounded-2xl bg-emerald-600 px-4 py-3 text-white transition hover:bg-emerald-700">Get Started</Link>
+          <Link href="/contact" className="mt-2 block rounded-2xl bg-emerald-600 px-4 py-3 text-white transition hover:bg-emerald-700">Contact Us</Link>
         </div>
       )}
     </nav>

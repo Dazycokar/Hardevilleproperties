@@ -17,7 +17,7 @@ export default function WhyChooseHardeville() {
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
             At Hardeville, we believe in making property investment simple, transparent, and rewarding. 
-            With years of expertise in the Lagos real estate market, we connect you with prime opportunities 
+            With years of expertise in the Global real estate market, we connect you with prime opportunities 
             while ensuring every transaction is secure and straightforward. Your investment deserves the best guidance.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

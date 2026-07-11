@@ -6,11 +6,11 @@ import { Icon } from "@iconify/react";
 const services = [
   {
     title: "Land Sales",
-    description: "Find the right land for your goals—across Lagos.",
+    description: "Find the right land for your goals—across Nigeria.",
     icon: "mdi:terrain",
   },
   {
-    title: "Building Construction",
+    title: "Construction",
     description: "From planning to delivery for modern, durable homes.",
     icon: "mdi:home-city",
   },

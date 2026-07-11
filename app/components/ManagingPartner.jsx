@@ -28,10 +28,10 @@ export default function ManagingPartner() {
 
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-600">
-                  From the Managing Partner
+                  Founder
                 </p>
                 <h2 className="mt-2 text-2xl font-bold text-slate-900">Demola Adeniyi</h2>
-                <p className="mt-1 text-sm text-slate-600">Managing Partner</p>
+                <p className="mt-1 text-sm text-slate-600">Founder</p>
               </div>
             </div>
 
@@ -104,9 +104,9 @@ export default function ManagingPartner() {
             </ul>
 
             <div className="mt-8 rounded-[1.5rem] bg-slate-950 p-6 text-white">
-              <p className="text-sm font-semibold text-emerald-300">Signature</p>
+              {/* <p className="text-sm font-semibold text-emerald-300">Signature</p> */}
               <p className="mt-3 text-lg font-bold">Demola Adeniyi</p>
-              <p className="mt-1 text-sm text-slate-300">Managing Partner</p>
+              <p className="mt-1 text-sm text-slate-300">Founder</p>
             </div>
           </motion.div>
         </div>

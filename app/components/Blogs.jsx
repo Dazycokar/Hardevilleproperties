@@ -10,7 +10,8 @@ const posts = [
     excerpt:
       "A practical checklist for evaluating land, documentation, and location fit.",
     fullText:
-      "This article walks through the full verification process: site inspections, title reviews, neighbor checks, and development potential so you can buy with confidence.",
+      "This guide walks you through verifying a land purchase: site checks, title review, neighbor/usage review, and assessing development potential so you can buy with confidence.",
+    related: ["properties", "land"],
   },
   {
     title: "Financing a Property Purchase",
@@ -18,7 +19,23 @@ const posts = [
     excerpt:
       "Understand the steps and how to plan confidently for your next move.",
     fullText:
-      "Learn about loan options, payment structures, budget planning, and the documents you need to make every financing decision clearly and safely.",
+      "Learn how financing works for property purchases: common options, payment structures, budgeting for documentation/processing, and the checklist of documents that keep decisions clear and safe.",
+    related: ["properties", "building"],
+  },
+  {
+    title: "Oasis Latest Update: Oasis Palm Estate Investor Notes",
+    date: "Latest",
+    excerpt:
+      "A property-focused summary of what to check in Oasis Palm Estate before buying.",
+    fullText:
+      "Oasis Palm Estate is a strong option for investors because of future-development potential. In this latest update, review title/land documentation, understand expected development momentum, and compare plots inside the estate for better liquidity.",
+    // Latest oasis “gist” placeholder. If you later provide real gist text, we can swap it in.
+    gist: {
+      label: "Latest Oasis gist",
+      text:
+        "Quick investor checklist: (1) confirm land/title documentation, (2) ask for confirmed development timelines, (3) check utility/access status, (4) compare plot location within the estate for future demand.",
+    },
+    related: ["properties", "oasis"],
   },
   {
     title: "Modern Building: What to Expect",
@@ -26,7 +43,8 @@ const posts = [
     excerpt:
       "Key stages in construction and how to track progress from start to finish.",
     fullText:
-      "Explore the full construction lifecycle, from planning and permitting to quality control, finishing touches, and handover best practices.",
+      "A step-by-step walkthrough of the construction lifecycle: planning and permitting, milestone tracking, quality checks, finishing and handover best practices—so you know what to expect at each stage.",
+    related: ["properties", "building"],
   },
 ];
 

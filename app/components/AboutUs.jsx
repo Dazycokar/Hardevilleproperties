@@ -64,7 +64,7 @@ export default function AboutUs() {
             </p>
 
             <p className="mt-6 font-semibold text-gray-900">Thank you...</p>
-            <p className="mt-1 text-gray-600">Demola Adeniyi — Managing Partner</p>
+            <p className="mt-1 text-gray-600">Demola Adeniyi</p>
           </div>
         </div>
 

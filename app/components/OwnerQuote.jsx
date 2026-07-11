@@ -16,7 +16,7 @@ export default function OwnerQuote() {
           <div className="absolute top-5 right-5 z-10">
             <span className="inline-flex items-center gap-2 rounded-full bg-emerald-700 px-4 py-2 text-sm font-semibold text-white shadow-lg">
               <span className="h-2.5 w-2.5 rounded-full bg-white/90" />
-              Owner • Mr Adeniyi Ademola
+              Founder • Mr Adeniyi Ademola
             </span>
           </div>
 
@@ -49,7 +49,7 @@ export default function OwnerQuote() {
           <span className="flex h-12 w-12 items-center justify-center rounded-3xl bg-emerald-500/10 text-2xl text-emerald-400">
             “
           </span>
-          <p className="text-sm uppercase tracking-[0.28em] text-emerald-500">From our owner • Mr Adeniyi Ademola</p>
+          <p className="text-sm uppercase tracking-[0.28em] text-emerald-500">From our Founder• Mr Adeniyi Ademola</p>
         </div>
 
         <p className="text-lg font-semibold leading-relaxed text-slate-900 sm:text-xl">
