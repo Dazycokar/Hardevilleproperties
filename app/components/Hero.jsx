@@ -4,20 +4,21 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-slate-950 text-white">
+    <section className="relative flex min-h-screen items-center overflow-hidden bg-slate-950 text-white">
       <div className="absolute inset-0">
         <Image
           src="/header.png"
           alt="Hardeville hero background"
           fill
-          className="object-contain object-center opacity-70"
+          className="object-cover object-center opacity-70"
           priority
         />
         <div className="absolute inset-0 bg-slate-950/80" />
       </div>
 
-      <div className="relative mx-auto max-w-5xl px-6 py-24 sm:px-8 lg:px-12">
+      <div className="relative mx-auto w-full max-w-5xl px-6 py-16 sm:px-8 lg:px-12">
         <div className="max-w-2xl">
+
           <span className="inline-flex rounded-full bg-emerald-500/15 px-4 py-2 text-sm font-semibold uppercase tracking-[0.28em] text-emerald-300">
             Lagos property investments
           </span>
@@ -29,17 +30,18 @@ export default function Hero() {
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
             <Link
-              href="#properties"
+              href="/properties"
               className="inline-flex items-center justify-center rounded-full bg-emerald-500 px-8 py-4 text-sm font-semibold text-slate-950 shadow-xl shadow-emerald-500/20 transition hover:bg-emerald-400"
             >
               Explore Properties
             </Link>
             <Link
-              href="#contact"
+              href="/contact"
               className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-8 py-4 text-sm font-semibold text-white transition hover:bg-white/20"
             >
               Talk to an Expert
             </Link>
+
           </div>
         </div>
       </div>

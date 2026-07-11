@@ -72,21 +72,12 @@ export default function Footer() {
               <Icon icon="mdi:facebook" width="22" height="22" />
             </Link>
             <Link
-              href="https://www.instagram.com/hardevillerealestate"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Instagram"
-              className="transition hover:text-white"
-            >
-              {/* <Icon icon="mdi:instagram" width="22" height="22" />
-            </Link>
-            <Link
               href="https://wa.me/2347086058060"
               target="_blank"
               rel="noreferrer"
               aria-label="WhatsApp"
               className="transition hover:text-white"
-            > */}
+            >
               <Icon icon="mdi:whatsapp" width="22" height="22" />
             </Link>
           </div>
