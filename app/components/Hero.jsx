@@ -7,7 +7,7 @@ export default function Hero() {
     <section className="relative flex min-h-screen items-center overflow-hidden bg-slate-950 text-white">
       <div className="absolute inset-0">
         <Image
-          src="/header.png"
+          src="/Header.png"
           alt="Hardeville hero background"
           fill
           className="object-cover object-center opacity-70"
@@ -19,30 +19,23 @@ export default function Hero() {
       <div className="relative mx-auto w-full max-w-5xl px-6 py-16 sm:px-8 lg:px-12">
         <div className="max-w-2xl">
 
-          <span className="inline-flex rounded-full bg-emerald-500/15 px-4 py-2 text-sm font-semibold uppercase tracking-[0.28em] text-emerald-300">
-            Lagos property investments
+          <span className="inline-flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-500/15 px-4 py-2 text-sm font-semibold uppercase tracking-[0.28em] text-emerald-300">
+            <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+            Global property investments
           </span>
-          <h1 className="mt-8 text-5xl font-black tracking-tight text-white sm:text-6xl">
-            Smooth property discovery for Lagos investors
-          </h1>
-          <p className="mt-6 text-lg leading-8 text-slate-300">
-            Find prime land and modern buildings with clear pricing, verified titles, and dedicated support from Hardeville.
-          </p>
-          <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
-            <Link
-              href="/properties"
-              className="inline-flex items-center justify-center rounded-full bg-emerald-500 px-8 py-4 text-sm font-semibold text-slate-950 shadow-xl shadow-emerald-500/20 transition hover:bg-emerald-400"
-            >
-              Explore Properties
-            </Link>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-8 py-4 text-sm font-semibold text-white transition hover:bg-white/20"
-            >
-              Talk to an Expert
-            </Link>
 
-          </div>
+          <h1 className="mt-8 text-5xl font-black leading-[1.05] tracking-tight text-white sm:text-6xl">
+            Making your{" "}
+            <span className="bg-gradient-to-r from-emerald-300 via-emerald-400 to-emerald-500 bg-clip-text text-transparent">
+              vision
+            </span>{" "}
+            become a reality
+          </h1>
+
+          <p className="mt-6 max-w-xl text-lg leading-8 text-slate-300">
+            Real estate financing, logistics and operational management.
+          </p>
+
         </div>
       </div>
     </section>

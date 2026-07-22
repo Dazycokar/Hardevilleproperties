@@ -6,7 +6,7 @@ import { Icon } from "@iconify/react";
 const services = [
   {
     title: "Land Sales",
-    description: "Find the right land for your goals—across Nigeria.",
+    description: "Find the right land for your goals across Nigeria.",
     icon: "mdi:terrain",
   },
   {

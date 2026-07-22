@@ -1,20 +1,32 @@
-"use client";
-import { useState } from 'react';
+   "use client";
+import { useRef, useState } from 'react';
+
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [projectsOpen, setProjectsOpen] = useState(false);
+  const projectsRef = useRef(null);
+
   const pathname = usePathname();
   const navItems = [
     { href: '/', label: 'Home' },
-    { href: '/properties', label: 'Properties' },
+
     { href: '/services', label: 'Services' },
     { href: '/about', label: 'About Us' },
-    // { href: '/contact', label: 'Contact' },
     { href: '/blogs', label: 'Blogs' },
+    { href: '/teams', label: 'Teams' },
   ];
+
+
+  const projects = [
+    { href: '/projects/lands', label: 'Lands project' },
+    { href: '/projects/buildings', label: 'Building project' },
+  ];
+
 
   return (
     <nav className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/95 backdrop-blur-xl shadow-sm">
@@ -47,6 +59,47 @@ export default function Navbar() {
               </Link>
             );
           })}
+
+          <div className="relative">
+            <button
+              type="button"
+              onClick={() => setProjectsOpen((v) => !v)}
+              className={`flex items-center gap-2 rounded-full px-3 py-2 text-sm font-medium transition ${pathname.startsWith('/projects') || projectsOpen ? 'text-emerald-700' : 'text-slate-700 hover:text-emerald-700'}`}
+            >
+              Projects
+              <span className="text-xs">▾</span>
+            </button>
+
+              <div
+              		className={`absolute left-0 top-full z-50 mt-3 w-56 origin-top rounded-2xl border border-slate-200 bg-white p-2 shadow-sm transition-all duration-150 ${
+
+                projectsOpen
+                  ? 'opacity-100 translate-y-0 pointer-events-auto'
+                  : 'opacity-0 -translate-y-1 pointer-events-none'
+              }`}
+            >
+              {projects.map((p) => (
+                <Link
+                  key={p.href}
+                  href={p.href}
+                  onClick={() => {
+                    setProjectsOpen(false);
+                  }}
+                  className="block rounded-xl px-3 py-2 text-sm text-slate-700 transition hover:bg-slate-100"
+                >
+                  {p.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+
+
+
+
+
+
+
           <Link
             href="/contact"
             className="rounded-full bg-emerald-600 px-5 py-2 text-white shadow-lg transition hover:bg-emerald-700"
@@ -55,9 +108,13 @@ export default function Navbar() {
           </Link>
         </div>
 
+
         <button
           type="button"
-          onClick={() => setMenuOpen((prev) => !prev)}
+          onClick={() => {
+            setMenuOpen((prev) => !prev);
+            setProjectsOpen(false);
+          }}
           className="lg:hidden inline-flex items-center justify-center rounded-2xl border border-slate-200 px-3 py-2 text-slate-700 transition hover:bg-slate-100 z-[60]"
           aria-label="Toggle menu"
         >
@@ -78,8 +135,44 @@ export default function Navbar() {
               {item.label}
             </Link>
           ))}
-          <Link href="/contact" className="mt-2 block rounded-2xl bg-emerald-600 px-4 py-3 text-white transition hover:bg-emerald-700">Contact Us</Link>
+
+          <div className="mt-2">
+            <button
+              type="button"
+              onClick={() => setProjectsOpen((v) => !v)}
+              className="w-full flex items-center justify-between rounded-2xl px-4 py-3 text-sm font-bold uppercase tracking-widest text-slate-500"
+            >
+              <span>Projects</span>
+              <span aria-hidden="true">{projectsOpen ? '−' : '+'}</span>
+            </button>
+
+            {projectsOpen && (
+              <div className="mt-1">
+                {projects.map((p) => (
+                  <Link
+                    key={p.href}
+                    href={p.href}
+                    className="block rounded-2xl px-4 py-3 text-slate-700 transition hover:bg-slate-100"
+                    onClick={() => {
+                      setProjectsOpen(false);
+                      setMenuOpen(false);
+                    }}
+                  >
+                    {p.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
+          <Link
+            href="/contact"
+            className="mt-2 block rounded-2xl bg-emerald-600 px-4 py-3 text-white transition hover:bg-emerald-700"
+          >
+            Contact Us
+          </Link>
         </div>
+
       )}
     </nav>
   );

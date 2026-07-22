@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-slate-950 text-slate-300 py-16">
       <div className="mx-auto max-w-7xl space-y-10 px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-10 md:grid-cols-3">
+        <div className="grid gap-10 md:grid-cols-4">
           <div className="space-y-4">
             <h3 className="text-2xl font-bold text-white">Hardeville</h3>
             <p className="text-sm leading-7 text-slate-400">
@@ -17,20 +17,32 @@ export default function Footer() {
           <div className="text-sm text-slate-300">
             <p className="font-semibold uppercase tracking-[0.24em] text-slate-500">Links</p>
             <div className="mt-4 space-y-2">
-              <Link href="/properties" className="block transition hover:text-white">
-                Properties
-              </Link>
               <Link href="/services" className="block transition hover:text-white">
                 Services
               </Link>
               <Link href="/contact" className="block transition hover:text-white">
-                Contact
+                Contact Us
               </Link>
               <Link href="/about" className="block transition hover:text-white">
                 About Us
               </Link>
               <Link href="/blogs" className="block transition hover:text-white">
                 Blogs
+              </Link>
+              <Link href="/teams" className="block transition hover:text-white">
+                Teams
+              </Link>
+            </div>
+          </div>
+
+          <div className="text-sm text-slate-300">
+            <p className="font-semibold uppercase tracking-[0.24em] text-slate-500">Projects</p>
+            <div className="mt-4 space-y-2">
+              <Link href="/projects/lands" className="block transition hover:text-white">
+                Lands
+              </Link>
+              <Link href="/projects/buildings" className="block transition hover:text-white">
+                Buildings
               </Link>
             </div>
           </div>
@@ -86,4 +98,3 @@ export default function Footer() {
     </footer>
   );
 }
-

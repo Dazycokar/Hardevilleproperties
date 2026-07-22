@@ -7,12 +7,12 @@ import { AnimatePresence, motion } from "framer-motion";
 export default function OasisShowcase() {
   const slides = useMemo(
     () => [
-      { src: "/oasis4.png", alt: "Oasis lifestyle aerial view" },
-      { src: "/oasis3.png", alt: "Oasis community highlights" },
-      { src: "/oasis.png", alt: "Oasis development entrance" },
+      // { src: "/oasispalm2.png", alt: "Oasis lifestyle aerial view" },
+      { src: "/oasis.png", alt: "Oasis community highlights" },
+      { src: "/oasispalm1.png", alt: "Oasis development entrance" },
       { src: "/oasis2.png", alt: "Oasis property detail" },
+      {src: "/oasispalm2.png", alt: "Oasis Palm Estate overview"},
     ],
-    []
   );
 
   const [active, setActive] = useState(0);
@@ -33,7 +33,7 @@ export default function OasisShowcase() {
             Oasis estates
           </p>
           <h2 className="mt-3 text-3xl md:text-4xl font-black text-slate-950">
-            A lifestyle gliding into view of our Oasis Program
+            About Oasis Palm Estate
           </h2>
           <p className="mt-3 max-w-2xl text-base leading-7 text-slate-600">
             Explore the Oasis collection through a smooth sliding showcase of our
@@ -91,7 +91,7 @@ export default function OasisShowcase() {
                       Slide {active + 1} of {slides.length}
                     </p>
                     <p className="mt-1 text-lg font-semibold text-white">
-                      Oasis in focus
+                      Oasis Palm Estate
                     </p>
                   </motion.div>
                 </div>
@@ -119,18 +119,11 @@ export default function OasisShowcase() {
             {/* Text */}
             <div className="flex flex-col justify-between gap-6">
               <div>
-                <div className="inline-flex items-center gap-2 rounded-full bg-white/80 px-4 py-2 border border-slate-200">
-                  <span className="inline-flex h-2.5 w-2.5 rounded-full bg-emerald-600" />
-                  <span className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-700">
-                    Curated views
-                  </span>
-                </div>
-
                 <h3 className="mt-5 text-2xl sm:text-3xl font-black text-slate-950">
                   From landscape to living
                 </h3>
                 <p className="mt-3 text-base leading-7 text-slate-600">
-                  Each slide highlights a different moment of the Oasis experience—
+                  Each slide highlights a different moment of the Oasis experience 
                   clean design, inviting spaces, and investor-ready development.
                 </p>
               </div>
