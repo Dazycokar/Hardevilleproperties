@@ -7,7 +7,7 @@ export default function Hero() {
     <section className="relative flex min-h-screen items-center overflow-hidden bg-slate-950 text-white">
       <div className="absolute inset-0">
         <Image
-          src="/Header.png"
+          src="/header.png"
           alt="Hardeville hero background"
           fill
           className="object-cover object-center opacity-90"
