@@ -59,13 +59,13 @@ export default function Footer() {
                 demola.adeniyi@gmail.com
               </a>
               <a
-                href="https://www.google.com/maps/search/Lagos,+Nigeria"
+                href="https://www.google.com/maps/search/Legacy+House,+5+Alhaji+Alli+Lane,+Ogba+Lagos"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-2 transition hover:text-white"
               >
                 <Icon icon="mdi:map-marker" width="18" height="18" className="text-emerald-400" />
-                Legacy House, 5, Alhhaji Alli Lane. Ogba Lagos, Nigeria
+                Legacy House, 5, Alhaji Alli Lane. Ogba Lagos, Nigeria
               </a>
             </div>
           </div>

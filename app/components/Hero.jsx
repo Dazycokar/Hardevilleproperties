@@ -10,10 +10,10 @@ export default function Hero() {
           src="/Header.png"
           alt="Hardeville hero background"
           fill
-          className="object-cover object-center opacity-70"
+          className="object-cover object-center opacity-90"
           priority
         />
-        <div className="absolute inset-0 bg-slate-950/80" />
+        <div className="absolute inset-0 bg-slate-950/40" />
       </div>
 
       <div className="relative mx-auto w-full max-w-5xl px-6 py-16 sm:px-8 lg:px-12">

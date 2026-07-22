@@ -15,3 +15,7 @@
 - [x] Add "Teams" link to the Links section in `app/components/Footer.jsx`
 - [x] Add new "Projects" section in footer with links to Lands and Buildings pages
 - [x] Remove "Properties" link from the footer Links section
+
+## Hero background image fix
+
+- [x] Fixed `app/components/Hero.jsx` — changed image `opacity-70` → `opacity-90` and overlay `bg-slate-950/80` → `bg-slate-950/40` to make `Header.png` visible
